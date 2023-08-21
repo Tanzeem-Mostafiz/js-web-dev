@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Summer Sale</title>
 
     <!-- daisyui and tailwind css -->
@@ -12,8 +12,227 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Work+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- styles -->
+    <style>
+      .worksans{
+      font-family: "Lato", sans-serif;
+      font-family: "Work Sans", sans-serif;
+      }
+      </style>
+
+<!-- link -->
+<script src="first.js"></script>
+<script src="second.js"></script>
+
+  </head>
+  <body>
+
+    <header>
+      <div class="hero h-[700px] bg-amber-100 ;">
+          <div class="hero-content flex-col lg:flex-row-reverse">
+            <img src="/images/Summer 1.png" class="max-w-sm rounded-lg" />
+            <div class="text-black">
+              <p class="flex justify-center font-bold">---SALE FEVER---</p><br>
+              <h1 class="text-6xl font-bold">Purchase TK 200 or<br> above & get <span id="span">20% off </span></h1><br>
+               
+              <div class="flex justify-center">
+                 <div> <p class="py-6 font-bold text-xl">use promo code </p></div>
+                 <div class="box bg-pink-400 text-white m-auto my-[15px] mx-[10px] p-[13px] font-bold rounded-2xl">SELL200</div>
+              </div>    
+            </div>
+          </div>
+        </div>
+  </header>
+
+
+  <div class="flex justify-center mt-[120px]">
+    <!--card-->
+    <div>
+    <!--fcard box-->
     
-</body>
+    <div class="fbox">
+        <p class="text-4xl font-bold">Kitchenware</p>
+
+        <div class="card1 flex">
+
+        <div class="card w-[300px] bg-base-100 shadow-lg h-[350px]" onclick="display('item1','p1')">
+            <figure class="px-10 pt-10">
+              <img src="/images/prod1.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <!--rate-->
+            <div class="rating flex justify-center mt-[20px]">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+            <div class="card-body items-center text-center">
+              <h2 id="item1" class="card-title">K. Accessories</h2>
+              <p id="p1">29 taka</p>
+              
+            </div>
+          </div>
+
+          <div class="card w-[300px] bg-base-100 shadow-lg h-[350px]" onclick="display('item2','p2')">
+            <figure class="px-10 pt-10">
+              <img src="/images/prod2.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+             <!--rating-->
+             <div class="rating flex justify-center mt-[20px]">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+            <div class="card-body items-center text-center">
+              <h2 id="item2" class="card-title">K. Accessories</h2>
+              <p id="p2">59 taka</p>
+             
+            </div>
+          </div>
+
+          <div class="card w-[300px] bg-base-100 shadow-lg h-[350px]" onclick="display('item3','p3')">
+            <figure class="px-10 pt-10">
+              <img src="/images/prod3.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+             <!--rating-->
+             <div class="rating flex justify-center mt-[20px]">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+            <div class="card-body items-center text-center">
+              <h2 id="item3" class="card-title">Home Cooker</h2>
+              <p id="p3">89 taka</p>
+              
+            </div>
+          </div>
+          </div>
+    </div>
+
+     <!--scard box-->
+
+     <div class="sbox">
+        <p class="text-4xl font-bold">Sportswear</p>
+
+        <div class="card1 flex">
+
+        <div class="card w-[300px] bg-base-100 shadow-lg h-[350px]" onclick="display('item4','p4')">
+            <figure class="px-10 pt-10">
+              <img src="/images/prod4.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <!--rating-->
+            <div class="rating flex justify-center mt-[20px]">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+            <div class="card-body items-center text-center">
+              <h2 id="item4" class="card-title">Sports Back Cap</h2>
+              <p id="p4">139 taka</p>
+            </div>
+          </div>
+
+          <div class="card w-[300px] bg-base-100 shadow-lg h-[350px]" onclick="display('item5','p5')">
+            <figure class="px-10 pt-10">
+              <img src="/images/prod5.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <!--rating-->
+            <div class="rating flex justify-center mt-[20px]">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+            <div class="card-body items-center text-center">
+              <h2 id="item5" class="card-title">Full Jersey Set</h2>
+              <p id="p5">99 taka</p>
+            </div>
+          </div>
+
+          <div class="card w-[300px] bg-base-100 shadow-lg h-[350px]" onclick="display('item6','p6')">
+            <figure class="px-10 pt-10">
+              <img src="/images/prod6.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+             <!--rating-->
+             <div class="rating flex justify-center mt-[20px]">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+            <div class="card-body items-center text-center">
+              <h2 id="item6" class="card-title">Sports cates</h2>
+              <p id="p6">179 taka</p>
+            </div>
+          </div>
+          </div>
+    </div>
+</div>
+
+
+
+<!--fcart-->
+
+<div class="mt-[80px] ml-[15px]">
+
+  <div class="card bg-base-100 p-5 mt-12 lg:mt-0">
+    <h2 class="font-bold mb-5">Have Coupon?</h2>
+    <div class="join">
+        <input id="couponin" class="input input-bordered join-item" placeholder="Coupon Code..."/>
+        <button id="couponb" class="btn join-item bg-pink-500" disabled onclick="Coupon()">APPLY</button>
+      </div>
+</div>
+
+
+
+
+
+  <!--scart-->
+
+<div class="my-10"></div>
+<div class="card bg-base-100 p-5 divide-y text-center lg:text-left">
+    <div id="list">
+        
+    </div>
+    <div class="text-center lg:text-left">
+    <h2 class="text-xl font-bold">Total Price: <span id="totalp" class="text-black font-bold">00</span> TK</h2>
+    <h2 class="text-xl font-bold">Discount: <span id="discount" class="text-black font-bold">00</span> TK</h2>
+    <h2 class="text-xl font-bold">Total: <span id="total" class="text-black font-bold">00</span> TK</h2> 
+    </div>
+<div class="card-actions justify-end">
+   <button id="dbtn" class="btn  bg-pink-500 py-2 px-4 rounded-md text-white my-5 flex-1" onclick="my_modal_5.showModal()" disabled>Make Purchase</button>
+        <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+          <form method="dialog" class="modal-box flex flex-col items-center">
+            <img src="images/congo.png" alt="">
+            <div class="mb-2"></div>
+            <h3 class="font-bold text-3xl">Congratulations!</h3>
+            <p class="py-3 font-bold">You have completed purchase</p>
+            <div class="modal-action">
+              <button class="btn bg-pink-500 text-white" onclick="resetAll()">Go Home</button>
+            </div>
+          </form>
+        </dialog>
+</div>
+</div>
+</div>
+</div>
+  </body>
 </html>
