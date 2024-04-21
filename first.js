@@ -18,8 +18,6 @@ function display(number,price){
     const p = document.createElement('p');
     p.innerText= (count) + ". "+tag;
     list.appendChild(p);
-
-    
     const tprice = totalPrice(price);
     document.getElementById('totalp').innerText= tprice;
     document.getElementById('total').innerText= tprice.toFixed(2);
@@ -33,7 +31,6 @@ function Coupon(){
         document.getElementById('discount').innerText= discount.toFixed(2);
         const total = totalprice-discount;
         document.getElementById('total').innerText= total.toFixed(2);
-
     }
     document.getElementById('couponin').value= '';
 }
