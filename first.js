@@ -28,7 +28,7 @@ function display(number,price){
 
 function Coupon(){
     const code = document.getElementById('couponin').value;
-    if(code==='SELL200'){
+    if(code==='SALE200'){
         const discount= totalprice*.2;
         document.getElementById('discount').innerText= discount.toFixed(2);
         const total = totalprice-discount;
